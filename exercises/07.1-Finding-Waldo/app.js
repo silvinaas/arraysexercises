@@ -3,7 +3,8 @@ var people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darne
 //loop here to find waldo, use the if conditionals
 
 for (var i=0; i<people.length; i++){
-    if (people.includes("waldo")){
-        console.log(people.indexOf('waldo'));
+    const x = people[i];
+    if (x.toLowerCase() == "waldo"){
+        console.log([i]);
     }
 }
