@@ -1,11 +1,11 @@
 let list_of_numbers = [4, 80, 85, 59, 37,25, 5, 64, 66,	81,20, 64, 41, 22, 76,76, 55, 96, 2, 68];
 
 // your code here
-function mergeTwoList(arreglo){
+function mergeTwoList(principalArray){
     let listadenum = [];
-    let odd = [];
     let even = [];
-    for (var item in list_of_numbers){
+    let odd = [];
+    for (var item in principalArray){
         if (item%2==0){
             even.push(item);
         }
@@ -13,6 +13,15 @@ function mergeTwoList(arreglo){
             odd.push(item);
         }
         }
+odd.forEach(function(item){
+    listadenum.push(item)
+});
+
+even.forEach(function(item){
+    listadenum.push(item)
+});
+
+    return listadenum;
     }
 
 
